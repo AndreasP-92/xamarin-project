@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarinProject.omOs">
+
+</ContentPage>
+
+<StackLayout>
+    <Image/>
+    <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,30,10,30" HeightRequest="700" CornerRadius="10">
+        <StackLayout>
+            <Button Text="Se Anbefalet Ruter" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+
+
+        </StackLayout>
+     
+    </Frame>
+
+</StackLayout>
