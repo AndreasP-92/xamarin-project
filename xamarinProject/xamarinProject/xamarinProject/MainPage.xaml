@@ -11,7 +11,7 @@
                 <Button Text="M/F Ertholm Færgen" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
                 <Button Text="Seværdigheder" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
                 <Button Text="Historier" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-                <Button Text="Om Os" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Button Text="Om Os" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white" Clicked="NavigateButton_OnClicked"/>
 
             </StackLayout>
             <!--<Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>-->

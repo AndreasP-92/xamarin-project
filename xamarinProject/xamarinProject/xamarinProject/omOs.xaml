@@ -3,23 +3,20 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="xamarinProject.omOs">
 
+
+    <StackLayout>
+        <Image/>
+        <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,30,10,30" HeightRequest="700" CornerRadius="10">
+            <StackLayout>
+                <Label Text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil." TextTransform="None" FontSize="20" TextColor="white"/>
+
+                <Image Source="chro-logo-rgb-1.png"
+           Aspect="Fill"
+           HeightRequest="{OnPlatform iOS=300, Android=250}"
+           WidthRequest="{OnPlatform iOS=300, Android=250}"
+           HorizontalOptions="Center" />    
+            </StackLayout>
+        </Frame>
+        
+    </StackLayout>
 </ContentPage>
-
-<StackLayout>
-    <Image/>
-    <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,30,10,30" HeightRequest="700" CornerRadius="10">
-        <StackLayout>
-            <Label Text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium
-optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis
-obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam
-nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,
-tenetur error" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-
-
-        </StackLayout>
-     
-    </Frame>
-
-</StackLayout>
