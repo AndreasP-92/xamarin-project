@@ -10,7 +10,9 @@ namespace xamarinProject
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new MainPage());
+            //MainPage = new QR();
+           
         }
 
         protected override void OnStart()

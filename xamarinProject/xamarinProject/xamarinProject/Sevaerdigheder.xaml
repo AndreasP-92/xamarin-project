@@ -1,17 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="xamarinProject.MainPage">
-
+             x:Class="xamarinProject.Sevaerdigheder">
     <StackLayout>
         <Image/>
         <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,30,10,30" HeightRequest="700" CornerRadius="10">
             <StackLayout>
-                <Button Text="Se Anbefalet Ruter" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-                <Button Text="M/F Ertholm Færgen" x:Name="MFTidsplan" Clicked="MFTidsplan_Clicked" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-                <Button Text="Seværdigheder" x:Name="Sevaerdigheder" Clicked="Sevaerdigheder_Clicked" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-                <Button Text="Historier" x:Name="Historier" Clicked="Historier_Clicked" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-                <Button Text="Om Os" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Button Text="Bygninger" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Button Text="Dyr" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Button Text="Planter" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
 
             </StackLayout>
             <!--<Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>-->
@@ -30,5 +27,4 @@
             </Label.FormattedText>
         </Label>-->
     </StackLayout>
-
 </ContentPage>
