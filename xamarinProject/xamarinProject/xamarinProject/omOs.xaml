@@ -7,7 +7,7 @@
     <StackLayout>
         <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,30,10,30" HeightRequest="700" CornerRadius="10">
             <StackLayout>
-                <Label Text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil." TextTransform="None" FontSize="20" TextColor="white"/>
+                <Label Text="Christiansø er del af øgruppen Ertholmene. Øgruppen er ejet af den danske stat og hører under Forsvarsministeriet. Den ligger ca. 20 km nordøst for Bornholm og består af de to beboede øer Christiansø og Frederiksø, fuglereservatet Græsholm og et antal større og mindre klippeskær. Alt er totalfredet, både fæstning, natur og dyreliv. Der bor i dag ca. 90 mennesker på øerne." TextTransform="None" FontSize="20" TextColor="white"/>
 
             </StackLayout>
         </Frame>
