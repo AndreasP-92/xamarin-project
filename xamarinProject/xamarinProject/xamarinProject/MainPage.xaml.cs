@@ -17,6 +17,10 @@ namespace xamarinProject
 
         private async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
+            await Navigation.PushAsync(new seAnbefaletRuter());
+
+        public async void OmOs_OnClicked(object sender, EventArgs e)
+        {
             await Navigation.PushAsync(new omOs());
         }
     }

@@ -11662,7 +11662,7 @@ namespace xamarinProject.Droid
 			public const int btn_radio_on_to_off_mtrl_animation = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int Christiansoe = 2131165286;
+			public const int christiansoeLogo = 2131165286;
 			
 			// aapt resource value: 0x7F070067
 			public const int design_bottom_navigation_item_background = 2131165287;

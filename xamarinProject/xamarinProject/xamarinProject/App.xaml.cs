@@ -10,8 +10,11 @@ namespace xamarinProject
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainPage());
-
+            MainPage = new NavigationPage(new MainPage())
+            {
+                BarBackgroundColor = Color.FromHex("#515151"),
+                BarTextColor = Color.FromHex("#e4c90e"),
+            };
         }
 
         protected override void OnStart()
