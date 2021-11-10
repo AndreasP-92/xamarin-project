@@ -10,11 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace xamarinProject
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class omOs : ContentPage
+    public partial class maps : ContentPage
     {
-        public omOs()
+        public maps()
         {
             InitializeComponent();
+        }
+
+        private async void NavigateButton_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
         }
     }
 }
