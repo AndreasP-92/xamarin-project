@@ -5,7 +5,7 @@
             Title="Forside" >
 
     <StackLayout>
-        <Image Source="christiansoeLogo.png"/>
+        <Image Source="Christiansoe.png"/>
         <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,15,10,30" HeightRequest="700" CornerRadius="10">
             <StackLayout>
                 <Button Text="Se Anbefalet Ruter" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white" Clicked="NavigateButton_OnClicked"/>
