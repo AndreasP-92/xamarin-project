@@ -5,14 +5,14 @@
             Title="Forside" >
 
     <StackLayout>
-        <Image Source="christiansoeLogo.png"/>
+        <Image Source="Christiansoe.png"/>
         <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,15,10,30" HeightRequest="700" CornerRadius="10">
             <StackLayout>
-                <Button Text="Se Anbefalet Ruter" CornerRadius="10" HeightRequest="70" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white" Clicked="NavigateButton_OnClicked"/>
-                <Button Text="M/F Ertholm Færgen" CornerRadius="10" HeightRequest="70" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-                <Button Text="Seværdigheder" CornerRadius="10" HeightRequest="70" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-                <Button Text="Historier" CornerRadius="10" HeightRequest="70" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-                <Button Text="Om Os" CornerRadius="10" HeightRequest="70" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Button Text="Se Anbefalet Ruter" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white" Clicked="NavigateButton_OnClicked"/>
+                <Button Text="M/F Ertholm Færgen" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Button Text="Seværdigheder" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Button Text="Historier" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Button Text="Om Os" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white" Clicked="OmOs_OnClicked"/>
             </StackLayout>
             <!--<Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>-->
         </Frame>

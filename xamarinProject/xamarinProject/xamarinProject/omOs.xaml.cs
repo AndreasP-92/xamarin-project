@@ -1,29 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace xamarinProject
 {
-    public partial class MainPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class omOs : ContentPage
     {
-        public MainPage()
+        public omOs()
         {
             InitializeComponent();
         }
 
         private async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new seAnbefaletRuter());
-
-        }
-
-        public async void OmOs_OnClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new omOs());
+            await Navigation.PushAsync(new MainPage());
         }
     }
 }

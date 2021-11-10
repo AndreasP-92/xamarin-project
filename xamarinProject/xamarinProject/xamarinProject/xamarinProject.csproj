@@ -16,6 +16,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="omOs.xaml">
+    <!-- <EmbeddedResource Update="seAnbefaletRuter.xaml"> -->
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+    <ItemGroup>
+    <!-- <EmbeddedResource Update="omOs.xaml"> -->
     <EmbeddedResource Update="seAnbefaletRuter.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
