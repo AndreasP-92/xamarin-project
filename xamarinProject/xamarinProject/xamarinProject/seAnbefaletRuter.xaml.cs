@@ -20,5 +20,10 @@ namespace xamarinProject
         {
             await Navigation.PushAsync(new MainPage());
         }
+
+        public async void ToFrederiksøMaps_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new maps());
+        }
     }
 }
