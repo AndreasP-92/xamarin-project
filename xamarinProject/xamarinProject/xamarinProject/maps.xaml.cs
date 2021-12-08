@@ -48,10 +48,10 @@ namespace xamarinProject
                     {
                         PlaceName = place.properties.Name,
                         Location = place.geometry.type,
-                        Position = new Position(place.geometry.coordinates[1], place.geometry.coordinates[0])
+                        Position = new Position(place.geometry.coordinates[1], place.geometry.coordinates[0]) //Latitude is a measurement on a globe or map of location north or south of the Equator. (Lat comes first), Longitude is a measurement of location east or west of the prime meridian at Greenwich. (Comes second)
                     });
                 }
-
+                
                 MyMap.ItemsSource = placesList;
                 //MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(47.6370891183, -122.123736172), Distance.FromKilometers(100)));
 
