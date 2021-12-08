@@ -48,7 +48,7 @@ namespace xamarinProject
                     {
                         PlaceName = place.properties.Name,
                         Location = place.geometry.type,
-                        Position = new Position(place.geometry.coordinates[0], place.geometry.coordinates[1])
+                        Position = new Position(place.geometry.coordinates[1], place.geometry.coordinates[0])
                     });
                 }
 
