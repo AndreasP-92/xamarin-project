@@ -27,7 +27,7 @@ namespace xamarinProject
     //}
 
 
-    public class Feature
+    public class Features
     {
         public int id { get; set; }
         public string name { get; set; }
@@ -39,6 +39,6 @@ namespace xamarinProject
 
     public class Root
     {
-        public List<Feature> features { get; set; }
+        public Features[] features { get; set; }
     }
 }
