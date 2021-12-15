@@ -42,7 +42,8 @@ namespace xamarinProject.controller
 
 
             AboutUsRoot initAboutus = JsonConvert.DeserializeObject<AboutUsRoot>(jsonString);
-
+            aboutUsText.Text = initAboutus.data[0].aboutUsText;
+            //Christiansø er del af øgruppen Ertholmene. Øgruppen er ejet af den danske stat og hører under Forsvarsministeriet. Den ligger ca. 20 km nordøst for Bornholm og består af de to beboede øer Christiansø og Frederiksø, fuglereservatet Græsholm og et antal større og mindre klippeskær. Alt er totalfredet, både fæstning, natur og dyreliv. Der bor i dag ca. 90 mennesker på øerne.
             Console.WriteLine(initAboutus);
         }
     }
