@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using xamarinProject.controller;
 using xamarinProject.model;
 
 namespace xamarinProject
@@ -50,6 +51,10 @@ namespace xamarinProject
             {
                 Button button = new Button
                 {
+                    Command = new Command(() =>
+                    {
+                        Navigation.PushAsync(new HistoryDesc(history.name, history.description));
+                    }),
                     Text = history.name
                 };
                 historyLayout.Children.Add(button);

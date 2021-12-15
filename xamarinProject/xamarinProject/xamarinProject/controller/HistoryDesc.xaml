@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarinProject.controller.HistoryDesc">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,30,10,30" HeightRequest="700" CornerRadius="10">
+                <ScrollView>
+                    <StackLayout>
+                        <Label x:Name="title"  TextColor="white" FontSize="36" TextTransform="None" VerticalTextAlignment="Center" HorizontalOptions="Center" Text="header"/>
+                        <Label x:Name="desc"/>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+            <Image Source="Christiansoe.png" Margin="10,10,10,30" ></Image>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
