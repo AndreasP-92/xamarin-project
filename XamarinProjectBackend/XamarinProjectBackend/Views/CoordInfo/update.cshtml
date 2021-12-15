@@ -1,11 +1,19 @@
 ﻿
 @model XamarinProjectBackend.Models.CoordInfo
 
+
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "update";
 }
 
-<form method="POST" asp-action="Create">
+<h1>update</h1>
+
+<form method="POST" asp-action="updateCoordInfo">
+    <input asp-for="Id" hidden></input>
+
+    <p>@Model.Id</p>
+    <p>@Model.Name</p>
+    <p>@Model.Description</p>
     <div class="border p-3">
         <div class="form-group row">
             <h2 class="text-black-50 pl-3">Add Item</h2>
@@ -58,14 +66,13 @@
 
                 <div class="col-md-12 row text-center">
                     <div class="col-6">
-                        <input type="submit" class="btn btn-success w-75" value="Create" />
+                        <input type="submit" class="btn btn-success w-75" value="Opdater" />
                     </div>
                     <div class="col-6">
-                        <a class="btn btn-primary w-75" asp-action="Index">Go Back</a>
+                        <a class="btn btn-primary w-75" asp-action="Index">Tilbage</a>
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
     </div>
 </form>
-
