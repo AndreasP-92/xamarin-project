@@ -22,7 +22,7 @@ namespace XamarinProjectBackend.Controllers
 
         public IActionResult Index()
         {
-            AboutUs obj = _db.aboutUs.Find(1);
+            AboutUs obj = _db.aboutUs.Find(2);
             return View(obj);
         }
 
@@ -36,6 +36,26 @@ namespace XamarinProjectBackend.Controllers
             _db.aboutUs.Add(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");
+        }
+
+        public IActionResult update(int? id)
+        {
+            var obj = _db.aboutUs.Find(id);
+            return View(obj);
+        }
+
+        public IActionResult updateAboutUsDesc(AboutUs obj)
+        {
+            _db.aboutUs.Update(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult getAboutUs()
+        {
+            var obj = _db.aboutUs;
+
+            return Json(obj);
         }
 
         public IActionResult Delete(int? id)
