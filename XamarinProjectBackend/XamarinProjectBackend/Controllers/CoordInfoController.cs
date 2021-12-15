@@ -79,15 +79,15 @@ namespace XamarinProjectBackend.Controllers
 
             foreach (var place in resultObject.features)
                 {
-                    obj.name = place.properties.Name;
-                    obj.description = place.properties.description;
-                    obj.type = place.geometry.type;
-                    obj.lat = place.geometry.coordinates[0].ToString();
-                    obj.lon = place.geometry.coordinates[1].ToString();
+                    obj.Name = place.properties.Name;
+                    obj.Description = place.properties.description;
+                    obj.Type = place.geometry.type;
+                    obj.Lat = place.geometry.coordinates[0].ToString();
+                    obj.Lon = place.geometry.coordinates[1].ToString();
 
                 // identity_insert is set to off sql server
                 // SET IDENTITY_INSERT tableName ON
-                _db.Database.ExecuteSqlRaw($"INSERT INTO dbo.Coordinfo (name, description, type, lat, lon) values ('{place.properties.Name}', '{place.properties.description}', '{obj.type = place.geometry.type}', '{place.geometry.coordinates[0]}', '{place.geometry.coordinates[1]}');");
+                _db.Database.ExecuteSqlRaw($"INSERT INTO dbo.Coordinfo (name, description, type, lat, lon) values ('{place.properties.Name}', '{place.properties.description}', '{obj.Type = place.geometry.type}', '{place.geometry.coordinates[0]}', '{place.geometry.coordinates[1]}');");
                     _db.SaveChanges();
 
             }
