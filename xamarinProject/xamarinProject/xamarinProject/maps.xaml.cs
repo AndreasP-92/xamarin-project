@@ -100,11 +100,6 @@ namespace xamarinProject
                     }); ;
                 }
 
-                Console.WriteLine(pinList[0]);
-
-
-
-
                 MyMap.ItemsSource = pinList;
                 MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(55.320708, 15.187362), Distance.FromKilometers(0.5)));
             }
