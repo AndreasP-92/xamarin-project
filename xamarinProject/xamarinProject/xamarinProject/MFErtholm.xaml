@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarinProject.MFErtholm">
+
+
+    <StackLayout>
+        <Image/>
+        <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,30,10,30" HeightRequest="700" CornerRadius="10">
+            <StackLayout>
+                <Label Text="Ank: 08:00 - Afg: 08:30" HeightRequest="40" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Label Text="Ank: 08:00 - Afg: 08:30" HeightRequest="40" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Label Text="Ank: 08:00 - Afg: 08:30" HeightRequest="40" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Label Text="Ank: 08:00 - Afg: 08:30" HeightRequest="40" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+
+
+
+            </StackLayout>
+            <!--<Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>-->
+        </Frame>
+        <!--<Label Text="Start developing tomorrow" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Start developing tomorrow" FontSize="Title" Padding="30,10,30,10"/>
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>-->
+    </StackLayout>
+</ContentPage>

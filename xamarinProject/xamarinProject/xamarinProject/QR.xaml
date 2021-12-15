@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="xamarinProject.QR">
+    <ContentPage.Content>
+    <StackLayout>
+
+        <!--<Button Text="Historier" x:Name="Historier" Clicked="Historier_Clicked" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>-->
+
+        <Button Text="Scan" Clicked="QrButton_OnClicked"/>
+    </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

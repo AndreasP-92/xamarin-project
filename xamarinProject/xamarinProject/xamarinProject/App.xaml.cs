@@ -12,6 +12,7 @@ namespace xamarinProject
 
             MainPage = new NavigationPage(new MainPage())
             {
+                //MainPage = new QR();
                 BarBackgroundColor = Color.FromHex("#515151"),
                 BarTextColor = Color.FromHex("#e4c90e"),
             };

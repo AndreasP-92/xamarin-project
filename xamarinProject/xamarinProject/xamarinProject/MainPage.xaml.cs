@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -20,8 +19,19 @@ namespace xamarinProject
             InitializeComponent();
             ApiHelper.InitializeClient();
         }
-
-        private async void NavigateButton_OnClicked(object sender, EventArgs e)
+        public async void MFTidsplan_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MFErtholm());
+        }
+        public async void Sevaerdigheder_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Sevaerdigheder());
+        }
+        public async void Historier_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Historier());
+        }
+        public async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new seAnbefaletRuter());
 
