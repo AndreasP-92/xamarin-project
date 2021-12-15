@@ -5,24 +5,22 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 using ZXing.Net.Mobile.Forms;
 
 namespace xamarinProject
 {
-    public partial class QRPage : ContentPage
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class QR : ContentPage
     {
-        public QRPage()
+        public QR()
         {
             InitializeComponent();
 
         }
 
-        private void InitializeComponent()
-        {
-        //    throw new NotImplementedException();
-        }
 
-        private async void Button_Clicked(object sender, EventArgs e)
+        public async void QrButton_OnClicked(object sender, EventArgs e)
         {
             var scan = new ZXingScannerPage();
             await Navigation.PushModalAsync(scan);
@@ -38,5 +36,10 @@ namespace xamarinProject
 
             };
         }
+
+        //public async void Historier_Clicked(object sender, EventArgs e)
+        //{
+        //    await Navigation.PushAsync(new MFErtholm());
+        //}
     }
 }
