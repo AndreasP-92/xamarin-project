@@ -53,9 +53,12 @@ namespace XamarinProjectBackend.Controllers
 
         public IActionResult getAboutUs()
         {
-            var obj = _db.aboutUs;
+          IEnumerable<AboutUs> objList = _db.aboutUs;
 
-            return Json(obj);
+            return Json(new
+            {
+                data = objList
+            });
         }
 
         public IActionResult Delete(int? id)
