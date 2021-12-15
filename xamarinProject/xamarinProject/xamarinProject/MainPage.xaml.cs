@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -30,8 +29,8 @@ namespace xamarinProject
         public async void Historier_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Historier());
-
-        private async void NavigateButton_OnClicked(object sender, EventArgs e)
+        }
+        public async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new seAnbefaletRuter());
 
