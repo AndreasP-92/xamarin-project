@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="xamarinProject.controller.OmOs">
+             x:Class="xamarinProject.controller.OmOs"
+             Title="Tilbage                                 Om os" >
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,30,10,30" HeightRequest="700" CornerRadius="10">
-                <StackLayout>
-                    <Label x:Name="aboutUsText" Text=""  TextTransform="None" FontSize="20" TextColor="white"/>
-
-                </StackLayout>
-            </Frame>
             <Image Source="Christiansoe.png" Margin="10,10,10,30" ></Image>
+                <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,30,10,30" HeightRequest="400" CornerRadius="10">
+                    <StackLayout>
+                        <Label x:Name="aboutUsText" Text=""  TextTransform="None" Margin="10,50,10,30" FontSize="20" TextColor="white"/>
+
+                    </StackLayout>
+                </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

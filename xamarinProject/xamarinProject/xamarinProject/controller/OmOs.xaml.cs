@@ -25,7 +25,7 @@ namespace xamarinProject.controller
 
         private void updateAboutusText()
         {
-            HttpWebRequest WebReq = (HttpWebRequest)WebRequest.Create(string.Format("http://10.0.2.2:25556/AboutusController/getAboutUs"));
+            HttpWebRequest WebReq = (HttpWebRequest)WebRequest.Create(string.Format("http://10.0.2.2:25556/aboutus/getaboutus"));
 
             WebReq.Method = "GET";
 
@@ -41,11 +41,10 @@ namespace xamarinProject.controller
             Console.WriteLine("============= INIT PLACES ===========");
 
 
-            AboutUs initAboutus = JsonConvert.DeserializeObject<AboutUs>(jsonString);
-
-            aboutUsText.Text = "Christiansø er del af øgruppen Ertholmene. Øgruppen er ejet af den danske stat og hører under Forsvarsministeriet. Den ligger ca. 20 km nordøst for Bornholm og består af de to beboede øer Christiansø og Frederiksø, fuglereservatet Græsholm og et antal større og mindre klippeskær. Alt er totalfredet, både fæstning, natur og dyreliv. Der bor i dag ca. 90 mennesker på øerne.";
-
-
+            AboutUsRoot initAboutus = JsonConvert.DeserializeObject<AboutUsRoot>(jsonString);
+            aboutUsText.Text = initAboutus.data[0].aboutUsText;
+            //Christiansø er del af øgruppen Ertholmene. Øgruppen er ejet af den danske stat og hører under Forsvarsministeriet. Den ligger ca. 20 km nordøst for Bornholm og består af de to beboede øer Christiansø og Frederiksø, fuglereservatet Græsholm og et antal større og mindre klippeskær. Alt er totalfredet, både fæstning, natur og dyreliv. Der bor i dag ca. 90 mennesker på øerne.
+            Console.WriteLine(initAboutus);
         }
     }
 }
