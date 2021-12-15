@@ -11,28 +11,26 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using xamarinProject.model;
 
-namespace xamarinProject
+namespace xamarinProject.controller
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Historier : ContentPage
+    public partial class OmOs : ContentPage
     {
-        public Historier()
+        public string AboutUsLabel { get; set; }
+        public OmOs()
         {
             InitializeComponent();
-            updateHistories();
-           
+            updateAboutusText();
         }
 
-        public void updateHistories()
+        private void updateAboutusText()
         {
-            HttpWebRequest WebReq = (HttpWebRequest)WebRequest.Create(string.Format("http://10.0.2.2:25556/CoordInfo/getAllCoordinates"));
+            HttpWebRequest WebReq = (HttpWebRequest)WebRequest.Create(string.Format("http://10.0.2.2:25556/AboutusController/getAboutUs"));
 
             WebReq.Method = "GET";
 
             HttpWebResponse WebResp = (HttpWebResponse)WebReq.GetResponse();
 
-            Console.WriteLine(WebResp.StatusCode);
-            Console.WriteLine(WebResp.Server);
 
             string jsonString;
             using (Stream stream = WebResp.GetResponseStream())   //modified from your code since the using statement disposes the stream automatically when done
@@ -43,22 +41,11 @@ namespace xamarinProject
             Console.WriteLine("============= INIT PLACES ===========");
 
 
-            Root initPlaces = JsonConvert.DeserializeObject<Root>(jsonString);
-            Console.WriteLine(initPlaces);
+            AboutUs initAboutus = JsonConvert.DeserializeObject<AboutUs>(jsonString);
 
-            foreach(Features history in initPlaces.features)
-            {
-                Button button = new Button
-                {
-                    Text = history.name
-                };
-                historyLayout.Children.Add(button);
-            }
-            //List<PlacePin> pinList = new List<PlacePin>();
+            aboutUsText.Text = "Christiansø er del af øgruppen Ertholmene. Øgruppen er ejet af den danske stat og hører under Forsvarsministeriet. Den ligger ca. 20 km nordøst for Bornholm og består af de to beboede øer Christiansø og Frederiksø, fuglereservatet Græsholm og et antal større og mindre klippeskær. Alt er totalfredet, både fæstning, natur og dyreliv. Der bor i dag ca. 90 mennesker på øerne.";
+
+
         }
-
-
-
-      
     }
 }

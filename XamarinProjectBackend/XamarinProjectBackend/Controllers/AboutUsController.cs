@@ -22,13 +22,46 @@ namespace XamarinProjectBackend.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<AboutUs> obj = _db.aboutUs;
+            AboutUs obj = _db.aboutUs.Find(2);
             return View(obj);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
         }
 
         public IActionResult Create(AboutUs obj)
         {
             _db.aboutUs.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult update(int? id)
+        {
+            var obj = _db.aboutUs.Find(id);
+            return View(obj);
+        }
+
+        public IActionResult updateAboutUsDesc(AboutUs obj)
+        {
+            _db.aboutUs.Update(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+        public IActionResult getAboutUs()
+        {
+            var obj = _db.aboutUs;
+
+            return Json(obj);
+        }
+
+        public IActionResult Delete(int? id)
+        {
+            var obj = _db.aboutUs.Find(id);
+            _db.aboutUs.Remove(obj);
             _db.SaveChanges();
             return RedirectToAction("Index");
         }

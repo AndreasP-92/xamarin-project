@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Maps;
+using xamarinProject.controller;
 
 namespace xamarinProject
 {
@@ -34,12 +35,11 @@ namespace xamarinProject
         public async void NavigateButton_OnClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new seAnbefaletRuter());
-
         }
 
-        public async void OmOs_OnClicked(object sender, EventArgs e)
+        public async void Omos_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new omOs());
+            await Navigation.PushAsync(new OmOs());
         }
     }
 }

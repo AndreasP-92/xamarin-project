@@ -12,7 +12,7 @@
                 <Button Text="M/F Ertholm Færgen" x:Name="MFTidsplan" Clicked="MFTidsplan_Clicked" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
                 <Button Text="Seværdigheder" x:Name="Sevaerdigheder" Clicked="Sevaerdigheder_Clicked" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
                 <Button Text="Historier" x:Name="Historier" Clicked="Historier_Clicked" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-                <Button Text="Om Os" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Button Text="Om Os" CornerRadius="10" x:Name="OmOs" Clicked="Omos_Clicked" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
 
             </StackLayout>
         </Frame>
