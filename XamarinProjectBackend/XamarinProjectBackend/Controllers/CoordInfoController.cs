@@ -47,6 +47,21 @@ namespace XamarinProjectBackend.Controllers
 //            return View(obj);
         }
 
+        public IActionResult update(int? id)
+        {
+            var obj = _db.Coordinfo.Find(id);
+            return View(obj);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult updateCoordInfo(CoordInfo obj)
+        {
+            _db.Coordinfo.Update(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
         public IActionResult ImportJsonFile(CoordInfo obj)
         {
 
@@ -91,6 +106,15 @@ namespace XamarinProjectBackend.Controllers
             {
                 features = objList
             });
+        }
+
+        public IActionResult Delete(int? id)
+        {
+
+            var obj = _db.Coordinfo.Find(id);
+            _db.Coordinfo.Remove(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
     }
