@@ -18,6 +18,7 @@ namespace xamarinProject
         public MainPage()
         {
             InitializeComponent();
+            ApiHelper.InitializeClient();
         }
 
         private async void NavigateButton_OnClicked(object sender, EventArgs e)

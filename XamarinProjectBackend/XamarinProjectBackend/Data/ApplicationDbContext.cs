@@ -17,5 +17,7 @@ namespace XamarinProjectBackend.Data
         public DbSet<CoordInfo> Coordinfo { get; set; }
         public DbSet<CoordInfo2> Coordinfo2 { get; set; }
         public DbSet<ImportedPlaces> importedPlaces{ get; set; }
+
+        public DbSet<AboutUs> aboutUs { get; set; }
     }
 }
