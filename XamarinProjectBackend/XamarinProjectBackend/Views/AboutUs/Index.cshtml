@@ -1,7 +1,35 @@
 ﻿
+@model XamarinProjectBackend.Models.AboutUs
+
+
 @{
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<div class="container p-3">
+    <div class="col-6">
+        <h2 class="text-primary">Om os</h2>
+    </div>
+    <br />
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>
+                    Beskrivelse
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td width="75%">@Model.aboutUsText</td>
+                <td width="25%">
+                    <a class="btn btn-primary w-100 mb-3" asp-controller="Expenses" asp-action="Update" asp-route-Id="@Model.id">Opdater</a>
+                    <a class="btn btn-danger w-100" asp-controller="Expenses" asp-action="Delete" asp-route-Id="@Model.id">Slet</a>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
