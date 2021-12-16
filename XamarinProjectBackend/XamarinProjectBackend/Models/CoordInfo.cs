@@ -18,13 +18,5 @@ namespace XamarinProjectBackend.Models
         public string Lat { get; set; }
         public string Lon { get; set; }
 
-        //public CoordInfo(string name, string description, string type, double lat, double lon)
-        //{
-        //    this.name = name;
-        //    this.description = description;
-        //    this.type = type;
-        //    this.lat = lat;
-        //    this.lon = lon;
-        //}
     }
 }
