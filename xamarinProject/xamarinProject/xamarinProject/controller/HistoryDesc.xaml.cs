@@ -21,9 +21,10 @@ namespace xamarinProject.controller
 
         public void updateHistory(string name, string description)
         {
-            //string parsedId = id.ToString();
             title.Text = name;
+            title.TextColor = Color.White;
             desc.Text = description;
+            desc.TextColor = Color.White;
         }
     }
 }

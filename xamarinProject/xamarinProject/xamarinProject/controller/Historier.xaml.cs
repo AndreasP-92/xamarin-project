@@ -36,7 +36,7 @@ namespace xamarinProject
             Console.WriteLine(WebResp.Server);
 
             string jsonString;
-            using (Stream stream = WebResp.GetResponseStream())   //modified from your code since the using statement disposes the stream automatically when done
+            using (Stream stream = WebResp.GetResponseStream())
             {
                 StreamReader reader = new StreamReader(stream, System.Text.Encoding.UTF8);
                 jsonString = reader.ReadToEnd();
@@ -63,9 +63,6 @@ namespace xamarinProject
                 };
                 historyLayout.Children.Add(button);
             }
-                   // < Button Text = "Se/Hoer Mere" CornerRadius = "10" HeightRequest = "100" BackgroundColor = "#515151" TextTransform = "None" FontSize = "20" TextColor = "white" />
-
-            //List<PlacePin> pinList = new List<PlacePin>();
         }
 
 

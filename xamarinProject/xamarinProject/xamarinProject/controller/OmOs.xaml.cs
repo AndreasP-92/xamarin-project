@@ -33,7 +33,7 @@ namespace xamarinProject.controller
 
 
             string jsonString;
-            using (Stream stream = WebResp.GetResponseStream())   //modified from your code since the using statement disposes the stream automatically when done
+            using (Stream stream = WebResp.GetResponseStream())
             {
                 StreamReader reader = new StreamReader(stream, System.Text.Encoding.UTF8);
                 jsonString = reader.ReadToEnd();

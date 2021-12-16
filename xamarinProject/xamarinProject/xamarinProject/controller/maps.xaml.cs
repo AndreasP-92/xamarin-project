@@ -32,36 +32,6 @@ namespace xamarinProject
 
         private void UpdateMap()
         {
-            //try
-            //{
-            //    var assembly = IntrospectionExtensions.GetTypeInfo(typeof(maps)).Assembly;
-            //    Stream stream = assembly.GetManifestResourceStream("xamarinProject.Places.json");
-            //    string text = string.Empty;
-            //    using (var reader = new StreamReader(stream))
-            //    {
-            //        text = reader.ReadToEnd();
-            //    }
-
-            //    var resultObject = JsonConvert.DeserializeObject<Places>(text);
-
-            //    foreach (var place in resultObject.features)
-            //    {
-            //        placesList.Add(new Place
-            //        {
-            //            PlaceName = place.properties.Name,
-            //            Location = place.geometry.type,
-            //            Position = new Position(place.geometry.coordinates[1], place.geometry.coordinates[0]) //Latitude is a measurement on a globe or map of location north or south of the Equator. (Lat comes first), Longitude is a measurement of location east or west of the prime meridian at Greenwich. (Comes second)
-            //        });
-            //    }
-
-            //    MyMap.ItemsSource = placesList;
-            //    MyMap.MoveToRegion(MapSpan.FromCenterAndRadius(new Position(55.320708, 15.187362), Distance.FromKilometers(0.5)));
-
-            //}
-            //catch (Exception ex)
-            //{
-            //    Debug.WriteLine(ex);
-            //}
 
             try
             { 
@@ -75,7 +45,7 @@ namespace xamarinProject
                 Console.WriteLine(WebResp.Server);
 
                 string jsonString;
-                using (Stream stream = WebResp.GetResponseStream())   //modified from your code since the using statement disposes the stream automatically when done
+                using (Stream stream = WebResp.GetResponseStream())
                 {
                     StreamReader reader = new StreamReader(stream, System.Text.Encoding.UTF8);
                     jsonString = reader.ReadToEnd();

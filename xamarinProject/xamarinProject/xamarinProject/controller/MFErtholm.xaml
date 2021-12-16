@@ -1,20 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="xamarinProject.MFErtholm">
+             x:Class="xamarinProject.MFErtholm"
+            Title="Tilbage                                 MF-Ertholm" >
 
 
     <StackLayout>
         <Image/>
         <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,30,10,30" HeightRequest="700" CornerRadius="10">
             <StackLayout>
-                <Label Text="Ank: 08:00 - Afg: 08:30" HeightRequest="40" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-                <Label Text="Ank: 08:00 - Afg: 08:30" HeightRequest="40" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-                <Label Text="Ank: 08:00 - Afg: 08:30" HeightRequest="40" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-                <Label Text="Ank: 08:00 - Afg: 08:30" HeightRequest="40" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
-
-
-
+                <Label Text="Afgange" HeightRequest="40" HorizontalOptions="CenterAndExpand" Margin="10,20,10,50" TextTransform="None" FontSize="36" TextColor="white"/>
+                <Label Text="Ank: 08:00 - Afg: 08:30" HeightRequest="40" BackgroundColor="#515151" HorizontalOptions="CenterAndExpand" Padding="10,5,10,5" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Label Text="Ank: 08:00 - Afg: 08:30" HeightRequest="40" BackgroundColor="#515151" HorizontalOptions="CenterAndExpand" Padding="10,5,10,5" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Label Text="Ank: 08:00 - Afg: 08:30" HeightRequest="40" BackgroundColor="#515151" HorizontalOptions="CenterAndExpand" Padding="10,5,10,5" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Label Text="Ank: 08:00 - Afg: 08:30" HeightRequest="40" BackgroundColor="#515151" HorizontalOptions="CenterAndExpand" Padding="10,5,10,5" TextTransform="None" FontSize="20" TextColor="white"/>
             </StackLayout>
         </Frame>
     </StackLayout>
