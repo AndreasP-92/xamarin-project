@@ -39,20 +39,21 @@
     <EmbeddedResource Update="controller\OmOs.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Historier.xaml">
+    <EmbeddedResource Update="controller\Historier.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="MFErtholm.xaml">
+    <EmbeddedResource Update="controller\MFErtholm.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="QR.xaml">
+    <EmbeddedResource Update="controller\QR.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="QRR.xaml">
+    <EmbeddedResource Update="controller\Sevaerdigheder.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Sevaerdigheder.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="services\" />
   </ItemGroup>
 </Project>

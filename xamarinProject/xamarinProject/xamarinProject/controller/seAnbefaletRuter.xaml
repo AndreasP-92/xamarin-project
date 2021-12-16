@@ -7,8 +7,8 @@
         <StackLayout>
             <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,30,10,30" HeightRequest="700" CornerRadius="10">
                 <StackLayout>
-                    <Button Text="Frederiksø Rundt" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white" Clicked="ToFrederiksøMaps_OnClicked"/>
-                    <Button Text="Christiansø Rundt" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>
+                    <Button Text="Christiansø Rundt" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white" Clicked="ToFrederiksøMaps_OnClicked"/>
+                    <!--<Button Text="Christiansø Rundt" CornerRadius="10" HeightRequest="100" BackgroundColor="#515151" TextTransform="None" FontSize="20" TextColor="white"/>-->
 
                 </StackLayout>
                 <!--<Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>-->

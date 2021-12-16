@@ -18,7 +18,6 @@ namespace xamarinProject
         public MainPage()
         {
             InitializeComponent();
-            ApiHelper.InitializeClient();
         }
         public async void MFTidsplan_Clicked(object sender, EventArgs e)
         {
