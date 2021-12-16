@@ -45,9 +45,8 @@ namespace xamarinProject
 
 
             Root initPlaces = JsonConvert.DeserializeObject<Root>(jsonString);
-            Console.WriteLine(initPlaces);
 
-            foreach(Features history in initPlaces.features)
+            foreach (Features history in initPlaces.features)
             {
                 Button button = new Button
                 {
@@ -55,15 +54,22 @@ namespace xamarinProject
                     {
                         Navigation.PushAsync(new HistoryDesc(history.name, history.description));
                     }),
-                    Text = history.name
+                    Text = history.name,
+                    //CornerRadius = 10,
+                    HeightRequest = 100,
+                    //BackgroundColor = Color.FromHex("#515151"),
+                    TextTransform = TextTransform.None,
+                    FontSize = 20
                 };
                 historyLayout.Children.Add(button);
             }
+                   // < Button Text = "Se/Hoer Mere" CornerRadius = "10" HeightRequest = "100" BackgroundColor = "#515151" TextTransform = "None" FontSize = "20" TextColor = "white" />
+
             //List<PlacePin> pinList = new List<PlacePin>();
         }
 
 
 
-      
+
     }
 }
