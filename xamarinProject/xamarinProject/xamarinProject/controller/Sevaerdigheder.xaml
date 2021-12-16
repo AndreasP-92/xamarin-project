@@ -9,7 +9,7 @@
         <Frame BackgroundColor="#0096c1" Padding="24" Margin="10,30,10,30" HeightRequest="700" CornerRadius="10">
             <StackLayout>
                 <Button Text="Bygninger" CornerRadius="10" HeightRequest="100" TextTransform="None" FontSize="20"/>
-                <Button Text="Dyr" HeightRequest="100" TextTransform="None" FontSize="20" TextColor="white"/>
+                <Button Text="Dyr" HeightRequest="100" TextTransform="None" FontSize="20"/>
                 <Button Text="Planter" HeightRequest="100" TextTransform="None" FontSize="20" TextColor="white"/>
             </StackLayout>
         </Frame>
